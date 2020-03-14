@@ -11,8 +11,6 @@ source("cmcdistance.R")
 You may now run the shiny app with just one command in R:
 shiny::runGithub("shiny-DEG","344968067")
 
-## instrunctions
-Instructions can be found here:https://github.com/344968067/shiny-DEG/WWW
 
 
 
