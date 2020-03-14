@@ -9,7 +9,8 @@ source("mydds.R")
 source("cmcdistance.R")
 
 You may now run the shiny app with just one command in R:
-shiny::runGithub("shiny-DEG","344968067")
+library("shiny")
+runApp("shiny-DEG")
 
 
 
