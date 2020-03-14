@@ -8,9 +8,12 @@ install.packages(c("shiny","shinythemes","ggplot2","gplots","DESeq2","RColorBrew
 source("mydds.R")
 source("cmcdistance.R")
 
-You may now run the shiny app with just one command in R:
+If you were ready for this packages, You may now run the shiny app with just one command in R:
 library("shiny")
 runApp("shiny-DEG")
+Or,
+shiny::runGitHub("shiny-DEG","344968067")
+
 
 
 
