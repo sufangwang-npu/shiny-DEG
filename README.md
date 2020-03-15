@@ -1,5 +1,6 @@
 # shiny-DEG
 A web application to analyze and visualize differentially expressed genes in RNA-seq.
+Copyright (C) 2020 344968067
 
 ## Information for the shiny-DEG App
 Code canbe found on github:https://github.com/344968067/shiny-DEG  
@@ -10,8 +11,15 @@ If you were ready for this packages, You may now run the shiny app with just one
 library("shiny")  
 runApp("shiny-DEG")  
 Or,  
-shiny::runGitHub("shiny-DEG","344968067")  
+shiny::runGitHub("shiny-DEG","344968067") 
 
+## Licensing
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at your option) any later version.  
+This program is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.  
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+You may contact the author of this code, Sufang Wang, at <sufangwang@nwpu.edu.cn>
 
 
 
