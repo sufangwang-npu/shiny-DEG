@@ -5,7 +5,7 @@
 
 ## Instructions
 
-Code can be found on github: [https://github.com/344968067/shiny-DEG](https://github.com/344968067/shiny-DEG)
+Code can be found on github: [https://github.com/sufangwang-npu/shiny-DEG](https://github.com/344968067/shiny-DEG)
 
 To run this app locally on your machine, download R or RStudio and run the following commands once to set up the environment:
 
@@ -22,7 +22,7 @@ You may now run the shiny app with just one command in R:
 
 ```
 
-shiny::runGitHub("shiny-DEG", "344968067")
+shiny::runGitHub("shiny-DEG", "sufangwang-npu")
 ```
 
 <a name="inputdata"></a> 
@@ -55,8 +55,6 @@ You may use this app by
 
 ![example3](example3.png)
 
-
-
 multi-facor data format:
 
 ![example5](example5.png)
@@ -77,7 +75,7 @@ Example file: https://github.com/344968067/shiny-DEG/WWW
 
 Analyzed data must contain some kind of expression measure for each sample (i.e. counts, normalized intensities, CPMs), and a set of p-values with corresponding fold changes for those p-values. For instance, if you have a p-value for the comparison of control vs exp , you can upload the observed fold change or log2(fold change) between control vs exp. If you have a more complex design and do not have fold changes readily available, you may upload the test statistics or other similar measures of effect size as placeholders. The fold changes are mainly used in the volcano plots. We recommend uploading p-values that are adjusted for multiple comparisons (such as q-values from the qvalue package, or adjusted p-values from p.adjust() function in R).
 
-Example file: : [https://github.com/344968067/shiny-DEG/WWW](https://github.com/???RSDVapp/)
+Example file: : [https://github.com/sufangwang-npu/shiny-DEG/WWW](https://github.com/sufangwang-npu/shiny-DEG)
 
 <a name="vis"></a> 
 
