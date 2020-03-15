@@ -186,7 +186,7 @@ ui <- fluidPage(
                            plotOutput("plot2")),
                   tabPanel("Help", 
                            br(),
-                           h4("Source code can be found on github:",a("https://github.com/344968067/shiny-DEG")),
+                           h4("Source code can be found on github:",a("https://github.com/sufangwang-npu/shiny-DEG")),
                            br(),
                            ####specify each column
                            h4("DEG Table"),
