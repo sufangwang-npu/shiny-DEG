@@ -59,8 +59,6 @@ multi-facor data format:
 
 ![example5](example5.png)
 
-Analysis: When raw counts are uploaded, the data is then analyzed by the app. The app uses the voom method from the ‘limma’ Bioconductor package to transform the raw counts into logged and normalized intensity values. These values are then analyzed via linear regression where gene intensity is regressed on the group factor. P-values from all pairwise regression tests for group effect are computed and Benjamini-Hochberg false discovery rate adjusted p-values are computed for each pairwise comparison. 
-
 Example file: https://github.com/344968067/shiny-DEG/WWW
 
 <a name="degtable"></a>
@@ -73,7 +71,7 @@ Example file: https://github.com/344968067/shiny-DEG/WWW
 
 ![example4](example4.png)
 
-Analyzed data must contain some kind of expression measure for each sample (i.e. counts, normalized intensities, CPMs), and a set of p-values with corresponding fold changes for those p-values. For instance, if you have a p-value for the comparison of control vs exp , you can upload the observed fold change or log2(fold change) between control vs exp. If you have a more complex design and do not have fold changes readily available, you may upload the test statistics or other similar measures of effect size as placeholders. The fold changes are mainly used in the volcano plots. We recommend uploading p-values that are adjusted for multiple comparisons (such as q-values from the qvalue package, or adjusted p-values from p.adjust() function in R).
+Analyzed data must contain some kind of expression measure for each sample  and a set of p-values with corresponding fold changes for those p-values. For instance, if you have a p-value for the comparison of control vs exp , you can  observe fold change or log2(fold change) between control vs exp. The fold changes are mainly used in the volcano plots. 
 
 Example file: : [https://github.com/sufangwang-npu/shiny-DEG/WWW](https://github.com/sufangwang-npu/shiny-DEG)
 
@@ -106,12 +104,6 @@ This is a scatter plot log fold changes vs –log10(p-values) so that genes with
  (<https://en.wikipedia.org/wiki/Volcano_plot_(statistics)>)
 
 ![volcanoplot](volcanoplot.png)
-
-<a name="scatterplots"></a>
-
-#### Scatter Plot
-
-This is a scatter plot of average gene expression in one group against another group. This allows the viewer to observe which genes have the largest differences between two groups. The smallest distances will be along the diagonal line, and points far away from the diagonal show the most differences. Hover over points to see which gene is represented by each point.
 
 <a name="boxplots"></a>
 
